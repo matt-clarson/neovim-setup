@@ -25,6 +25,9 @@ set showmatch
 set incsearch
 set hlsearch
 
+" open nerdtree
+map <C-d> :NERDTreeToggle<CR>
+
 " vim-go config
 let g:go_template_autocreate = 0
 
