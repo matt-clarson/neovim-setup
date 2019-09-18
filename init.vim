@@ -1,3 +1,12 @@
+call plug#begin('~/.local/share/nvim/plugged')
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'prettier/vim-prettier'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
+call plug#end()
+
 filetype plugin on
 syntax on
 
@@ -24,6 +33,7 @@ set showmatch
 " searches
 set incsearch
 set hlsearch
+
 
 " open nerdtree
 map <C-d> :NERDTreeToggle<CR>
