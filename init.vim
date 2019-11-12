@@ -10,6 +10,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'vim-airline/vim-airline'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 call plug#end()
 
 filetype plugin on
