@@ -5,6 +5,11 @@ Plug 'mxw/vim-jsx'
 Plug 'prettier/vim-prettier'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
+Plug 'neovimhaskell/haskell-vim'
+Plug 'rust-lang/rust.vim'
+Plug 'vim-syntastic/syntastic'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 filetype plugin on
@@ -37,6 +42,19 @@ set hlsearch
 
 " open nerdtree
 map <C-d> :NERDTreeToggle<CR>
+
+" syntastic settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" rust.vim settings
+autocmd BufWritePre *.rs RustFmt
 
 " vim-go config
 let g:go_template_autocreate = 0
