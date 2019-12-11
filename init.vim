@@ -11,6 +11,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'vim-airline/vim-airline'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 filetype plugin on
