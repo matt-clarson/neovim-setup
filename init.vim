@@ -12,6 +12,7 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'vim-airline/vim-airline'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'leafgarland/typescript-vim'
+Plug 'lifepillar/pgsql.vim'
 call plug#end()
 
 filetype plugin on
@@ -40,6 +41,9 @@ set showmatch
 " searches
 set incsearch
 set hlsearch
+
+" default .sql files to pgsql syntax
+let g:sql_type_default = 'pgsql'
 
 
 " open nerdtree
