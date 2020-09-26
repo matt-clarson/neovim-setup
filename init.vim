@@ -64,6 +64,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi']
+let g:syntastic_python_checkers = ['flake8']
 
 " rust.vim settings
 autocmd BufWritePre *.rs RustFmt
